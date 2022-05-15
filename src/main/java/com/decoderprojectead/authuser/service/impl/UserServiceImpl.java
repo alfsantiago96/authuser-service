@@ -29,8 +29,8 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public Optional<UserModel> findById(UUID userId) {
-        return userRepository.findById(userId);
+    public Optional<UserModel> findByCpf(String cpf) {
+        return userRepository.findByCpf(cpf);
     }
 
     @Override

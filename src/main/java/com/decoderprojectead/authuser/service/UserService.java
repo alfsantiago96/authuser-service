@@ -11,7 +11,7 @@ import java.util.UUID;
 public interface UserService {
     List<UserModel> findAll();
 
-    Optional<UserModel> findById(UUID userId);
+    Optional<UserModel> findByCpf(String cpf);
 
     void delete(UserModel userModel);
 
